@@ -13,9 +13,12 @@ font-family:Arial, Helvetica, sans-serif;
 background:#f8fafc;
 color:#111827;
 line-height:1.6;
+overflow-x:hidden;
 }
 
-/* HERO */
+/* =========================
+HERO
+========================= */
 
 .hero{
 
@@ -25,8 +28,8 @@ min-height:100vh;
 background:
 linear-gradient(
     135deg,
-    #071126 0%,
-    #16233f 100%
+    #02122d 0%,
+    #0a234f 100%
 );
 
 display:flex;
@@ -35,7 +38,7 @@ align-items:center;
 
 justify-content:center;
 
-padding:80px 40px;
+padding:60px 40px;
 ```
 
 }
@@ -51,21 +54,27 @@ display:flex;
 
 align-items:center;
 
-justify-content:space-between;
+justify-content:center;
 
-gap:120px;
+gap:70px;
 ```
 
 }
 
+/* =========================
+IMAGE
+========================= */
+
 .product-image{
 
 ```
-flex:1;
+flex:55%;
 
 display:flex;
 
 justify-content:center;
+
+align-items:center;
 ```
 
 }
@@ -75,24 +84,30 @@ justify-content:center;
 ```
 width:100%;
 
-max-width:650px;
+max-width:800px;
 
 height:auto;
 
 filter:
 drop-shadow(
-    0 30px 60px rgba(0,0,0,.45)
+    0 25px 60px rgba(0,0,0,.45)
 );
 ```
 
 }
 
+/* =========================
+CONTENT
+========================= */
+
 .product-content{
 
 ```
-flex:1;
+flex:45%;
 
 max-width:600px;
+
+color:white;
 ```
 
 }
@@ -106,7 +121,7 @@ background:#22c55e;
 
 color:white;
 
-padding:12px 25px;
+padding:12px 24px;
 
 border-radius:999px;
 
@@ -126,9 +141,11 @@ margin-bottom:25px;
 ```
 color:white;
 
-font-size:4rem;
+font-size:3.5rem;
 
 line-height:1.1;
+
+font-weight:800;
 
 margin-bottom:30px;
 ```
@@ -138,13 +155,13 @@ margin-bottom:30px;
 .hero-description{
 
 ```
-color:#dbe4f0;
+color:#d6e1f2;
 
-font-size:1.2rem;
+font-size:1.15rem;
 
 line-height:1.9;
 
-margin-bottom:40px;
+margin-bottom:35px;
 ```
 
 }
@@ -154,7 +171,7 @@ margin-bottom:40px;
 ```
 list-style:none;
 
-margin-bottom:50px;
+margin-bottom:45px;
 ```
 
 }
@@ -166,12 +183,14 @@ color:white;
 
 font-size:1.1rem;
 
-margin-bottom:15px;
+margin-bottom:14px;
 ```
 
 }
 
-/* BOTÃO */
+/* =========================
+BUTTON
+========================= */
 
 .buy-btn{
 
@@ -184,15 +203,15 @@ background:#22c55e;
 
 color:white;
 
-padding:22px 60px;
+padding:22px 55px;
 
 border-radius:999px;
 
-font-size:1.3rem;
+font-size:1.25rem;
 
 font-weight:700;
 
-transition:all .3s ease;
+transition:.3s;
 
 box-shadow:
 0 20px 40px rgba(34,197,94,.35);
@@ -206,20 +225,22 @@ box-shadow:
 background:#16a34a;
 
 transform:
-translateY(-4px)
+translateY(-3px)
 scale(1.03);
 ```
 
 }
 
-/* FEATURES */
+/* =========================
+FEATURES
+========================= */
 
 .features{
 
 ```
-padding:100px 30px;
-
 background:white;
+
+padding:90px 40px;
 
 display:flex;
 
@@ -245,16 +266,6 @@ border-radius:20px;
 
 box-shadow:
 0 15px 40px rgba(0,0,0,.08);
-
-transition:.3s;
-```
-
-}
-
-.feature-card:hover{
-
-```
-transform:translateY(-5px);
 ```
 
 }
@@ -277,14 +288,16 @@ color:#6b7280;
 
 }
 
-/* TRUST */
+/* =========================
+TRUST
+========================= */
 
 .trust-section{
 
 ```
 text-align:center;
 
-padding:100px 20px;
+padding:90px 20px;
 
 background:#f8fafc;
 ```
@@ -294,7 +307,7 @@ background:#f8fafc;
 .trust-section h2{
 
 ```
-font-size:2.7rem;
+font-size:2.5rem;
 
 margin-bottom:20px;
 ```
@@ -316,23 +329,25 @@ color:#6b7280;
 .stars{
 
 ```
-margin-top:30px;
+margin-top:25px;
 
-font-size:2.5rem;
+font-size:2.2rem;
 
 color:#f59e0b;
 ```
 
 }
 
-/* INCLUDED */
+/* =========================
+INCLUDED
+========================= */
 
 .included-section{
 
 ```
-padding:100px 20px;
-
 background:white;
+
+padding:90px 20px;
 
 text-align:center;
 ```
@@ -342,9 +357,9 @@ text-align:center;
 .included-section h2{
 
 ```
-font-size:2.7rem;
+font-size:2.5rem;
 
-margin-bottom:60px;
+margin-bottom:50px;
 ```
 
 }
@@ -366,16 +381,16 @@ flex-wrap:wrap;
 .included-card{
 
 ```
-width:340px;
-
-padding:35px;
+width:330px;
 
 background:#f8fafc;
+
+padding:35px;
 
 border-radius:20px;
 
 box-shadow:
-0 10px 30px rgba(0,0,0,.05);
+0 10px 25px rgba(0,0,0,.06);
 ```
 
 }
@@ -396,23 +411,25 @@ color:#6b7280;
 
 }
 
-/* CTA */
+/* =========================
+CTA
+========================= */
 
 .cta-section{
 
 ```
-text-align:center;
-
-padding:120px 20px;
-
 background:
 linear-gradient(
     135deg,
-    #071126,
-    #16233f
+    #02122d,
+    #0a234f
 );
 
+text-align:center;
+
 color:white;
+
+padding:110px 20px;
 ```
 
 }
@@ -430,16 +447,18 @@ margin-bottom:20px;
 .cta-section p{
 
 ```
+color:#d6e1f2;
+
 max-width:700px;
 
 margin:0 auto 40px;
-
-color:#dbe4f0;
 ```
 
 }
 
-/* FAQ */
+/* =========================
+FAQ
+========================= */
 
 .faq-section{
 
@@ -448,7 +467,7 @@ max-width:1100px;
 
 margin:auto;
 
-padding:100px 20px;
+padding:90px 20px;
 ```
 
 }
@@ -458,9 +477,9 @@ padding:100px 20px;
 ```
 text-align:center;
 
-font-size:2.7rem;
+font-size:2.5rem;
 
-margin-bottom:60px;
+margin-bottom:50px;
 ```
 
 }
@@ -472,12 +491,12 @@ background:white;
 
 padding:30px;
 
-margin-bottom:20px;
-
 border-radius:15px;
 
+margin-bottom:20px;
+
 box-shadow:
-0 10px 30px rgba(0,0,0,.05);
+0 10px 25px rgba(0,0,0,.05);
 ```
 
 }
@@ -498,18 +517,20 @@ color:#6b7280;
 
 }
 
-/* FINAL CTA */
+/* =========================
+FINAL CTA
+========================= */
 
 .final-cta{
 
 ```
-text-align:center;
-
-padding:120px 20px;
-
 background:#111827;
 
 color:white;
+
+text-align:center;
+
+padding:110px 20px;
 ```
 
 }
@@ -519,12 +540,14 @@ color:white;
 ```
 font-size:3rem;
 
-margin-bottom:40px;
+margin-bottom:35px;
 ```
 
 }
 
-/* FOOTER */
+/* =========================
+FOOTER
+========================= */
 
 footer{
 
@@ -535,7 +558,7 @@ color:#cbd5e1;
 
 text-align:center;
 
-padding:60px 20px;
+padding:50px 20px;
 ```
 
 }
@@ -543,18 +566,16 @@ padding:60px 20px;
 footer p{
 
 ```
-margin-bottom:15px;
-
 max-width:900px;
 
-margin-left:auto;
-
-margin-right:auto;
+margin:0 auto 15px auto;
 ```
 
 }
 
-/* RESPONSIVO */
+/* =========================
+RESPONSIVE
+========================= */
 
 @media(max-width:1100px){
 
@@ -565,7 +586,7 @@ margin-right:auto;
 
     text-align:center;
 
-    gap:60px;
+    gap:40px;
 
 }
 
@@ -577,7 +598,7 @@ margin-right:auto;
 
 .product-content h1{
 
-    font-size:3rem;
+    font-size:2.8rem;
 
 }
 ```
@@ -589,7 +610,7 @@ margin-right:auto;
 ```
 .hero{
 
-    padding:50px 20px;
+    padding:40px 20px;
 
 }
 
@@ -616,10 +637,7 @@ margin-right:auto;
 }
 
 .cta-section h2,
-.final-cta h2,
-.trust-section h2,
-.included-section h2,
-.faq-section h2{
+.final-cta h2{
 
     font-size:2rem;
 
